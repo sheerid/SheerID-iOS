@@ -8,16 +8,49 @@
 
 #import "SheerIDMobile.h"
 
+@interface SheerIDMobile()
+{
+@private
+    NSString *accessToken;
+    NSString *hostname;
+    BOOL useHttps;
+}
+
+- (id)initWithAccessToken:(NSString *)myAccessToken hostname:(NSString*)myHostname secure:(BOOL)myUseHttps;
+
+@end
+
 @implementation SheerIDMobile
 
-- (id)init
-{
+- (id)initWithAccessToken:(NSString *)myAccessToken {
+    self = [self initWithAccessToken:myAccessToken hostname:kSheerIDProductionHostname secure:YES];
+    return self;
+}
+
+- (id)initWithAccessToken:(NSString *)myAccessToken hostname:(NSString*)myHostname secure:(BOOL)myUseHttps {
     self = [super init];
     if (self) {
-        // Initialization code here.
+        accessToken = myAccessToken;
+        hostname = hostname;
+        useHttps = myUseHttps;
     }
-    
     return self;
+}
+
+- (NSArray *)organizations {
+    return [self searchOrganizations:nil];
+}
+
+- (NSArray *)searchOrganizations:(OrganizationSearch *)search {
+    return [NSArray arrayWithObjects:nil];
+}
+
+- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org {
+    return [self verify:p organization:org affiliationTypes:nil];
+}
+
+- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org affiliationTypes:(NSSet *)affTypes {
+    return [[VerificationResponse alloc] init];
 }
 
 @end

@@ -15,6 +15,11 @@
 		C7F2D71515178A1800937AE2 /* libSheerIDMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */; };
 		C7F2D71B15178A1800937AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D71915178A1800937AE2 /* InfoPlist.strings */; };
 		C7F2D71E15178A1800937AE2 /* SheerIDMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */; };
+		C7F2D72B15178A4D00937AE2 /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D72915178A4D00937AE2 /* Organization.m */; };
+		C7F2D72F15178A6000937AE2 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D72D15178A6000937AE2 /* Field.m */; };
+		C7F2D73315178A7100937AE2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73115178A7100937AE2 /* Person.m */; };
+		C7F2D73715178A8500937AE2 /* AffiliationType.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73515178A8500937AE2 /* AffiliationType.m */; };
+		C7F2D73F1517959100937AE2 /* ServiceConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73D1517959100937AE2 /* ServiceConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +35,21 @@
 /* Begin PBXFileReference section */
 		C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSheerIDMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D70015178A1800937AE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C7F2D70415178A1800937AE2 /* SheerIDMobile-Prefix.pch */ = {isa = PBXFileReference; path = "SheerIDMobile-Prefix.pch"; sourceTree = "<group>"; };
-		C7F2D70515178A1800937AE2 /* SheerIDMobile.h */ = {isa = PBXFileReference; path = SheerIDMobile.h; sourceTree = "<group>"; };
+		C7F2D70415178A1800937AE2 /* SheerIDMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SheerIDMobile-Prefix.pch"; sourceTree = "<group>"; };
+		C7F2D70515178A1800937AE2 /* SheerIDMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheerIDMobile.h; sourceTree = "<group>"; };
 		C7F2D70615178A1800937AE2 /* SheerIDMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobile.m; sourceTree = "<group>"; };
 		C7F2D70D15178A1800937AE2 /* SheerIDMobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheerIDMobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C7F2D71015178A1800937AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C7F2D71815178A1800937AE2 /* SheerIDMobileTests-Info.plist */ = {isa = PBXFileReference; path = "SheerIDMobileTests-Info.plist"; sourceTree = "<group>"; };
+		C7F2D71815178A1800937AE2 /* SheerIDMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheerIDMobileTests-Info.plist"; sourceTree = "<group>"; };
 		C7F2D71A15178A1800937AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */ = {isa = PBXFileReference; path = SheerIDMobileTests.h; sourceTree = "<group>"; };
+		C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheerIDMobileTests.h; sourceTree = "<group>"; };
 		C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobileTests.m; sourceTree = "<group>"; };
+		C7F2D72915178A4D00937AE2 /* Organization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Organization.m; path = Model/Organization.m; sourceTree = "<group>"; };
+		C7F2D72D15178A6000937AE2 /* Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Field.m; path = Model/Field.m; sourceTree = "<group>"; };
+		C7F2D73115178A7100937AE2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Model/Person.m; sourceTree = "<group>"; };
+		C7F2D73515178A8500937AE2 /* AffiliationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AffiliationType.m; path = Model/AffiliationType.m; sourceTree = "<group>"; };
+		C7F2D73D1517959100937AE2 /* ServiceConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceConstant.m; path = Model/ServiceConstant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		C7F2D70215178A1800937AE2 /* SheerIDMobile */ = {
 			isa = PBXGroup;
 			children = (
+				C7F2D72715178A2600937AE2 /* Model */,
 				C7F2D70515178A1800937AE2 /* SheerIDMobile.h */,
 				C7F2D70615178A1800937AE2 /* SheerIDMobile.m */,
 				C7F2D70315178A1800937AE2 /* Supporting Files */,
@@ -129,6 +140,18 @@
 				C7F2D71915178A1800937AE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7F2D72715178A2600937AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D73515178A8500937AE2 /* AffiliationType.m */,
+				C7F2D72D15178A6000937AE2 /* Field.m */,
+				C7F2D72915178A4D00937AE2 /* Organization.m */,
+				C7F2D73115178A7100937AE2 /* Person.m */,
+				C7F2D73D1517959100937AE2 /* ServiceConstant.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F2D70715178A1800937AE2 /* SheerIDMobile.m in Sources */,
+				C7F2D72B15178A4D00937AE2 /* Organization.m in Sources */,
+				C7F2D72F15178A6000937AE2 /* Field.m in Sources */,
+				C7F2D73315178A7100937AE2 /* Person.m in Sources */,
+				C7F2D73715178A8500937AE2 /* AffiliationType.m in Sources */,
+				C7F2D73F1517959100937AE2 /* ServiceConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +416,7 @@
 				C7F2D72315178A1800937AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7F2D72415178A1800937AE2 /* Build configuration list for PBXNativeTarget "SheerIDMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +425,7 @@
 				C7F2D72615178A1800937AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
