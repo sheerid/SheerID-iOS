@@ -11,6 +11,7 @@
 #define kSheerIDProductionHostname @"services.sheerid.com"
 #define kSheerIDSandboxHostname @"services-sandbox.sheerid.com"
 
+#define kSheerIDErrorCodeInsufficientData 9901
 
 #pragma mark -
 #pragma mark Model Interfaces
@@ -45,9 +46,18 @@
 @end
 
 
+@interface OrganizationSearch : NSObject
+
+- (id)initWithQuery:(NSString *)query;
+- (NSString *)query;
+
+@end
+
+
 @interface Person : NSObject
 
 - (void)addValue:(NSString *)value forField:(Field *)field;
+- (NSEnumerator *)fieldEnumerator;
 - (BOOL)hasValueForField:(Field *)field;
 - (NSString *)valueForField:(Field *)field;
 
@@ -63,21 +73,16 @@
 
 @end
 
-@interface OrganizationSearch : NSObject
-
-- (id) initWithQuery:(NSString *)query;
-
-@end
-
 #pragma mark -
 #pragma mark SheerIDMobile Interface
 
 @interface SheerIDMobile : NSObject
 
 - (id)initWithAccessToken:(NSString *)accessToken;
+- (NSSet *)fields:(Organization *)org;
 - (NSArray *)organizations;
 - (NSArray *)searchOrganizations:(OrganizationSearch *)search;
-- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org;
-- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org affiliationTypes:(NSSet *)affTypes;
+- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org error:(NSError **)error;
+- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org affiliationTypes:(NSSet *)affTypes error:(NSError **)error;
 
 @end

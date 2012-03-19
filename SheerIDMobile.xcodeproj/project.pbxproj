@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C77525F01517B346007882E3 /* VerificationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C77525EE1517B346007882E3 /* VerificationResponse.m */; };
+		C77525F41517B39C007882E3 /* VerificationResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C77525F21517B39C007882E3 /* VerificationResponse+Private.h */; };
+		C77525FE1517BC09007882E3 /* SheerIDMobile+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C77525FC1517BC09007882E3 /* SheerIDMobile+Private.h */; };
+		C77526081517BEEA007882E3 /* OrganizationSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C77526061517BEEA007882E3 /* OrganizationSearch.m */; };
 		C7F2D70115178A1800937AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70015178A1800937AE2 /* Foundation.framework */; };
 		C7F2D70715178A1800937AE2 /* SheerIDMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D70615178A1800937AE2 /* SheerIDMobile.m */; };
 		C7F2D70F15178A1800937AE2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */; };
-		C7F2D71115178A1800937AE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D71015178A1800937AE2 /* UIKit.framework */; };
 		C7F2D71215178A1800937AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70015178A1800937AE2 /* Foundation.framework */; };
 		C7F2D71515178A1800937AE2 /* libSheerIDMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */; };
 		C7F2D71B15178A1800937AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D71915178A1800937AE2 /* InfoPlist.strings */; };
@@ -20,6 +23,10 @@
 		C7F2D73315178A7100937AE2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73115178A7100937AE2 /* Person.m */; };
 		C7F2D73715178A8500937AE2 /* AffiliationType.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73515178A8500937AE2 /* AffiliationType.m */; };
 		C7F2D73F1517959100937AE2 /* ServiceConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D73D1517959100937AE2 /* ServiceConstant.m */; };
+		C7F2D7421517A80C00937AE2 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2D7401517A80C00937AE2 /* JSONKit.h */; };
+		C7F2D7431517A80C00937AE2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D7411517A80C00937AE2 /* JSONKit.m */; };
+		C7F2D74F1517ABE800937AE2 /* SheerIDMobileIntegrationTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F2D74D1517ABE700937AE2 /* SheerIDMobileIntegrationTests.h */; };
+		C7F2D7511517AC6200937AE2 /* SheerIDMobileIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D74E1517ABE800937AE2 /* SheerIDMobileIntegrationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C77525EE1517B346007882E3 /* VerificationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerificationResponse.m; path = Model/VerificationResponse.m; sourceTree = "<group>"; };
+		C77525F21517B39C007882E3 /* VerificationResponse+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "VerificationResponse+Private.h"; path = "Model/VerificationResponse+Private.h"; sourceTree = "<group>"; };
+		C77525FC1517BC09007882E3 /* SheerIDMobile+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SheerIDMobile+Private.h"; sourceTree = "<group>"; };
+		C77526061517BEEA007882E3 /* OrganizationSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrganizationSearch.m; path = Model/OrganizationSearch.m; sourceTree = "<group>"; };
 		C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSheerIDMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D70015178A1800937AE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F2D70415178A1800937AE2 /* SheerIDMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SheerIDMobile-Prefix.pch"; sourceTree = "<group>"; };
@@ -40,7 +51,6 @@
 		C7F2D70615178A1800937AE2 /* SheerIDMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobile.m; sourceTree = "<group>"; };
 		C7F2D70D15178A1800937AE2 /* SheerIDMobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheerIDMobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C7F2D71015178A1800937AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C7F2D71815178A1800937AE2 /* SheerIDMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheerIDMobileTests-Info.plist"; sourceTree = "<group>"; };
 		C7F2D71A15178A1800937AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheerIDMobileTests.h; sourceTree = "<group>"; };
@@ -50,6 +60,10 @@
 		C7F2D73115178A7100937AE2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Model/Person.m; sourceTree = "<group>"; };
 		C7F2D73515178A8500937AE2 /* AffiliationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AffiliationType.m; path = Model/AffiliationType.m; sourceTree = "<group>"; };
 		C7F2D73D1517959100937AE2 /* ServiceConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceConstant.m; path = Model/ServiceConstant.m; sourceTree = "<group>"; };
+		C7F2D7401517A80C00937AE2 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		C7F2D7411517A80C00937AE2 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		C7F2D74D1517ABE700937AE2 /* SheerIDMobileIntegrationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheerIDMobileIntegrationTests.h; sourceTree = "<group>"; };
+		C7F2D74E1517ABE800937AE2 /* SheerIDMobileIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobileIntegrationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F2D70F15178A1800937AE2 /* SenTestingKit.framework in Frameworks */,
-				C7F2D71115178A1800937AE2 /* UIKit.framework in Frameworks */,
 				C7F2D71215178A1800937AE2 /* Foundation.framework in Frameworks */,
 				C7F2D71515178A1800937AE2 /* libSheerIDMobile.a in Frameworks */,
 			);
@@ -78,6 +91,7 @@
 		C7F2D6F215178A1800937AE2 = {
 			isa = PBXGroup;
 			children = (
+				C7F2D7471517A84500937AE2 /* JSONKit */,
 				C7F2D70215178A1800937AE2 /* SheerIDMobile */,
 				C7F2D71615178A1800937AE2 /* SheerIDMobileTests */,
 				C7F2D6FF15178A1800937AE2 /* Frameworks */,
@@ -99,7 +113,6 @@
 			children = (
 				C7F2D70015178A1800937AE2 /* Foundation.framework */,
 				C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */,
-				C7F2D71015178A1800937AE2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +122,7 @@
 			children = (
 				C7F2D72715178A2600937AE2 /* Model */,
 				C7F2D70515178A1800937AE2 /* SheerIDMobile.h */,
+				C77525FC1517BC09007882E3 /* SheerIDMobile+Private.h */,
 				C7F2D70615178A1800937AE2 /* SheerIDMobile.m */,
 				C7F2D70315178A1800937AE2 /* Supporting Files */,
 			);
@@ -128,6 +142,8 @@
 			children = (
 				C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */,
 				C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */,
+				C7F2D74D1517ABE700937AE2 /* SheerIDMobileIntegrationTests.h */,
+				C7F2D74E1517ABE800937AE2 /* SheerIDMobileIntegrationTests.m */,
 				C7F2D71715178A1800937AE2 /* Supporting Files */,
 			);
 			path = SheerIDMobileTests;
@@ -148,10 +164,22 @@
 				C7F2D73515178A8500937AE2 /* AffiliationType.m */,
 				C7F2D72D15178A6000937AE2 /* Field.m */,
 				C7F2D72915178A4D00937AE2 /* Organization.m */,
+				C77526061517BEEA007882E3 /* OrganizationSearch.m */,
 				C7F2D73115178A7100937AE2 /* Person.m */,
 				C7F2D73D1517959100937AE2 /* ServiceConstant.m */,
+				C77525F21517B39C007882E3 /* VerificationResponse+Private.h */,
+				C77525EE1517B346007882E3 /* VerificationResponse.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C7F2D7471517A84500937AE2 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D7401517A80C00937AE2 /* JSONKit.h */,
+				C7F2D7411517A80C00937AE2 /* JSONKit.m */,
+			);
+			name = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +189,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F2D7421517A80C00937AE2 /* JSONKit.h in Headers */,
+				C7F2D74F1517ABE800937AE2 /* SheerIDMobileIntegrationTests.h in Headers */,
+				C77525F41517B39C007882E3 /* VerificationResponse+Private.h in Headers */,
+				C77525FE1517BC09007882E3 /* SheerIDMobile+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +300,9 @@
 				C7F2D73315178A7100937AE2 /* Person.m in Sources */,
 				C7F2D73715178A8500937AE2 /* AffiliationType.m in Sources */,
 				C7F2D73F1517959100937AE2 /* ServiceConstant.m in Sources */,
+				C7F2D7431517A80C00937AE2 /* JSONKit.m in Sources */,
+				C77525F01517B346007882E3 /* VerificationResponse.m in Sources */,
+				C77526081517BEEA007882E3 /* OrganizationSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F2D7511517AC6200937AE2 /* SheerIDMobileIntegrationTests.m in Sources */,
 				C7F2D71E15178A1800937AE2 /* SheerIDMobileTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +342,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -330,7 +366,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

@@ -27,6 +27,14 @@
     return self;
 }
 
+- (NSEnumerator *)fieldEnumerator {
+    NSMutableArray *fields = [NSMutableArray array];
+    for (NSString *key in [data keyEnumerator]) {
+        [fields addObject:[[[Field alloc] initWithCode:key] autorelease]];
+    }
+    return [fields objectEnumerator];
+}
+
 - (void)addValue:(NSString *)value forField:(Field *)field {
     [data setValue:value forKey:field.code];
 }
