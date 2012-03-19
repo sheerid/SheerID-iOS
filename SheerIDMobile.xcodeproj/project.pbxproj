@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7F2D70115178A1800937AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70015178A1800937AE2 /* Foundation.framework */; };
+		C7F2D70715178A1800937AE2 /* SheerIDMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D70615178A1800937AE2 /* SheerIDMobile.m */; };
+		C7F2D70F15178A1800937AE2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */; };
+		C7F2D71115178A1800937AE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D71015178A1800937AE2 /* UIKit.framework */; };
+		C7F2D71215178A1800937AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D70015178A1800937AE2 /* Foundation.framework */; };
+		C7F2D71515178A1800937AE2 /* libSheerIDMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */; };
+		C7F2D71B15178A1800937AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D71915178A1800937AE2 /* InfoPlist.strings */; };
+		C7F2D71E15178A1800937AE2 /* SheerIDMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7F2D71315178A1800937AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F2D6F415178A1800937AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F2D6FC15178A1800937AE2;
+			remoteInfo = SheerIDMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSheerIDMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F2D70015178A1800937AE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7F2D70415178A1800937AE2 /* SheerIDMobile-Prefix.pch */ = {isa = PBXFileReference; path = "SheerIDMobile-Prefix.pch"; sourceTree = "<group>"; };
+		C7F2D70515178A1800937AE2 /* SheerIDMobile.h */ = {isa = PBXFileReference; path = SheerIDMobile.h; sourceTree = "<group>"; };
+		C7F2D70615178A1800937AE2 /* SheerIDMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobile.m; sourceTree = "<group>"; };
+		C7F2D70D15178A1800937AE2 /* SheerIDMobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheerIDMobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7F2D71015178A1800937AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7F2D71815178A1800937AE2 /* SheerIDMobileTests-Info.plist */ = {isa = PBXFileReference; path = "SheerIDMobileTests-Info.plist"; sourceTree = "<group>"; };
+		C7F2D71A15178A1800937AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */ = {isa = PBXFileReference; path = SheerIDMobileTests.h; sourceTree = "<group>"; };
+		C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheerIDMobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F2D6FA15178A1800937AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2D70115178A1800937AE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F2D70915178A1800937AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2D70F15178A1800937AE2 /* SenTestingKit.framework in Frameworks */,
+				C7F2D71115178A1800937AE2 /* UIKit.framework in Frameworks */,
+				C7F2D71215178A1800937AE2 /* Foundation.framework in Frameworks */,
+				C7F2D71515178A1800937AE2 /* libSheerIDMobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F2D6F215178A1800937AE2 = {
+			isa = PBXGroup;
+			children = (
+				C7F2D70215178A1800937AE2 /* SheerIDMobile */,
+				C7F2D71615178A1800937AE2 /* SheerIDMobileTests */,
+				C7F2D6FF15178A1800937AE2 /* Frameworks */,
+				C7F2D6FE15178A1800937AE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F2D6FE15178A1800937AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */,
+				C7F2D70D15178A1800937AE2 /* SheerIDMobileTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F2D6FF15178A1800937AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D70015178A1800937AE2 /* Foundation.framework */,
+				C7F2D70E15178A1800937AE2 /* SenTestingKit.framework */,
+				C7F2D71015178A1800937AE2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F2D70215178A1800937AE2 /* SheerIDMobile */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D70515178A1800937AE2 /* SheerIDMobile.h */,
+				C7F2D70615178A1800937AE2 /* SheerIDMobile.m */,
+				C7F2D70315178A1800937AE2 /* Supporting Files */,
+			);
+			path = SheerIDMobile;
+			sourceTree = "<group>";
+		};
+		C7F2D70315178A1800937AE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D70415178A1800937AE2 /* SheerIDMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7F2D71615178A1800937AE2 /* SheerIDMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D71C15178A1800937AE2 /* SheerIDMobileTests.h */,
+				C7F2D71D15178A1800937AE2 /* SheerIDMobileTests.m */,
+				C7F2D71715178A1800937AE2 /* Supporting Files */,
+			);
+			path = SheerIDMobileTests;
+			sourceTree = "<group>";
+		};
+		C7F2D71715178A1800937AE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D71815178A1800937AE2 /* SheerIDMobileTests-Info.plist */,
+				C7F2D71915178A1800937AE2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7F2D6FB15178A1800937AE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7F2D6FC15178A1800937AE2 /* SheerIDMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F2D72115178A1800937AE2 /* Build configuration list for PBXNativeTarget "SheerIDMobile" */;
+			buildPhases = (
+				C7F2D6F915178A1800937AE2 /* Sources */,
+				C7F2D6FA15178A1800937AE2 /* Frameworks */,
+				C7F2D6FB15178A1800937AE2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SheerIDMobile;
+			productName = SheerIDMobile;
+			productReference = C7F2D6FD15178A1800937AE2 /* libSheerIDMobile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7F2D70C15178A1800937AE2 /* SheerIDMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F2D72415178A1800937AE2 /* Build configuration list for PBXNativeTarget "SheerIDMobileTests" */;
+			buildPhases = (
+				C7F2D70815178A1800937AE2 /* Sources */,
+				C7F2D70915178A1800937AE2 /* Frameworks */,
+				C7F2D70A15178A1800937AE2 /* Resources */,
+				C7F2D70B15178A1800937AE2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F2D71415178A1800937AE2 /* PBXTargetDependency */,
+			);
+			name = SheerIDMobileTests;
+			productName = SheerIDMobileTests;
+			productReference = C7F2D70D15178A1800937AE2 /* SheerIDMobileTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F2D6F415178A1800937AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "SheerID, Inc.";
+			};
+			buildConfigurationList = C7F2D6F715178A1800937AE2 /* Build configuration list for PBXProject "SheerIDMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7F2D6F215178A1800937AE2;
+			productRefGroup = C7F2D6FE15178A1800937AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F2D6FC15178A1800937AE2 /* SheerIDMobile */,
+				C7F2D70C15178A1800937AE2 /* SheerIDMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7F2D70A15178A1800937AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2D71B15178A1800937AE2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7F2D70B15178A1800937AE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F2D6F915178A1800937AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2D70715178A1800937AE2 /* SheerIDMobile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F2D70815178A1800937AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2D71E15178A1800937AE2 /* SheerIDMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7F2D71415178A1800937AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7F2D6FC15178A1800937AE2 /* SheerIDMobile */;
+			targetProxy = C7F2D71315178A1800937AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7F2D71915178A1800937AE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F2D71A15178A1800937AE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7F2D71F15178A1800937AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7F2D72015178A1800937AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7F2D72215178A1800937AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SheerIDMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheerIDMobile/SheerIDMobile-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7F2D72315178A1800937AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SheerIDMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheerIDMobile/SheerIDMobile-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7F2D72515178A1800937AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheerIDMobile/SheerIDMobile-Prefix.pch";
+				INFOPLIST_FILE = "SheerIDMobileTests/SheerIDMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C7F2D72615178A1800937AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheerIDMobile/SheerIDMobile-Prefix.pch";
+				INFOPLIST_FILE = "SheerIDMobileTests/SheerIDMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F2D6F715178A1800937AE2 /* Build configuration list for PBXProject "SheerIDMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F2D71F15178A1800937AE2 /* Debug */,
+				C7F2D72015178A1800937AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F2D72115178A1800937AE2 /* Build configuration list for PBXNativeTarget "SheerIDMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F2D72215178A1800937AE2 /* Debug */,
+				C7F2D72315178A1800937AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7F2D72415178A1800937AE2 /* Build configuration list for PBXNativeTarget "SheerIDMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F2D72515178A1800937AE2 /* Debug */,
+				C7F2D72615178A1800937AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F2D6F415178A1800937AE2 /* Project object */;
+}
