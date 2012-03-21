@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define kSheerIDProductionHostname @"services.sheerid.com"
 #define kSheerIDSandboxHostname @"services-sandbox.sheerid.com"

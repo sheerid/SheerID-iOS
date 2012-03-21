@@ -77,6 +77,9 @@
     
 //   [queryParts addObject:[NSString stringWithFormat:@"_affiliationTypes=%@", [@"STUDENT_PART_TIME,STUDENT_FULL_TIME" stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding], nil]];
     
+    NSString *deviceId = [self deviceIdentifier:DeviceIdentifierStrategyUUID];
+    [queryParts addObject:[NSString stringWithFormat:@"_deviceId=%@", [deviceId stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+    
     NSString *query = [queryParts componentsJoinedByString:@"&"];
     
     NSLog(@"%@", query);
@@ -240,5 +243,31 @@
     [self initiateRequest:request];
 }
 
+- (NSString *)deviceIdentifier:(DeviceIdentifierStrategy)strategy {
+#ifdef __IPHONE_5_0
+    switch (strategy) {
+        case DeviceIdentifierStrategyUUID:
+        default: {
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            NSString *UUID;
+            
+            if (![defaults valueForKey:@"UUID"])
+            {
+                CFUUIDRef UUIDRef = CFUUIDCreate(kCFAllocatorDefault);
+                CFStringRef UUIDSRef = CFUUIDCreateString(kCFAllocatorDefault, UUIDRef);
+                UUID = [NSString stringWithFormat:@"%@", UUIDSRef];
+                
+                [defaults setObject:UUID forKey:@"UUID"];
+            }
+            else {
+                UUID = [defaults valueForKey:@"UUID"];
+            }
+            return UUID;
+        }
+    }
+#else
+    return [[UIDevice currentDevice] uniqueIdentifier];
+#endif
+}
 
 @end

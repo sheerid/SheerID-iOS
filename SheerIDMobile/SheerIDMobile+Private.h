@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    DeviceIdentifierStrategyUUID
+}DeviceIdentifierStrategy;
+
 @interface SheerIDMobile() <NSURLConnectionDelegate>
 {
 @private
@@ -16,12 +20,14 @@
     BOOL useHttps;
     
     CFMutableDictionaryRef requests;
+    
 }
 
 - (id)initWithAccessToken:(NSString *)myAccessToken hostname:(NSString*)myHostname secure:(BOOL)myUseHttps;
 - (void)get:(NSString *)path;
 - (void)postStringData:(NSString *)strData toPath:(NSString *)path;
 - (void)initiateRequest:(NSURLRequest *)request;
+- (NSString *)deviceIdentifier:(DeviceIdentifierStrategy)strategy;
 
 @end
 
