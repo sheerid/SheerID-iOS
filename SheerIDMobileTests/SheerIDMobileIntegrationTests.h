@@ -7,11 +7,19 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "SheerIDMobile.h"
 
-@interface SheerIDMobileIntegrationTests : SenTestCase {
+@interface SheerIDMobileIntegrationTests : SenTestCase <SheerIDDelegate> {
     NSString *accessToken;
     NSString *hostname;
     BOOL secure;
+    BOOL done;
+    id result;
+    SheerIDMobile *sheerID;
 }
 
+@property (nonatomic, retain) id result;
+
+- (BOOL)waitForCompletion;
+- (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs;
 @end

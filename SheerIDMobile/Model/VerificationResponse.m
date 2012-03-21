@@ -7,7 +7,7 @@
 //
 
 #import "SheerIDMobile.h"
-#import "VerificationResponse+Private.h"
+#import "SheerIDMobile+Private.h"
 
 @implementation VerificationResponse
 

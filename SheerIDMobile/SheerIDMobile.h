@@ -18,9 +18,6 @@
 
 @interface ServiceConstant : NSObject
 
-- (id)initWithCode:(NSString *)code;
-- (id)initWithCode:(NSString *)code displayName:(NSString *)displayName;
-
 - (NSString *)code;
 - (NSString *)displayName;
 
@@ -28,17 +25,21 @@
 
 
 @interface AffiliationType : ServiceConstant
+
++ (AffiliationType *)affiliationTypeWithCode:(NSString *)code;
+
 @end
 
 
 @interface Field : ServiceConstant
+
++ (Field *)fieldWithCode:(NSString *)code;
++ (Field *)fieldWithCode:(NSString *)code displayName:(NSString *)displayName;
+
 @end
 
 
 @interface Organization : NSObject
-
-- (id)initWithID:(NSString *)ID;
-- (id)initWithID:(NSString *)ID name:(NSString *)name;
 
 - (NSString *)ID;
 - (NSString *)name;
@@ -76,13 +77,30 @@
 #pragma mark -
 #pragma mark SheerIDMobile Interface
 
-@interface SheerIDMobile : NSObject
+@protocol SheerIDDelegate <NSObject>
+
+@optional
+- (void)sheerID:(id)sender listFieldsDidFinish:(NSSet *)fields;
+- (void)sheerID:(id)sender listFieldshDidFinishWithError:(NSError *)error;
+- (void)sheerID:(id)sender organizationSearchDidFinish:(NSArray *)organizations;
+- (void)sheerID:(id)sender organizationSearchDidFinishWithError:(NSError *)error;
+- (void)sheerID:(id)sender verificationDidFinishWithResponse:(VerificationResponse *)resp;
+- (void)sheerID:(id)sender verificationDidFinishWithError:(NSError *)error;
+
+@end
+
+@interface SheerIDMobile : NSObject {
+    id<SheerIDDelegate> delegate;
+}
+
+@property (nonatomic, retain) id<SheerIDDelegate> delegate;
 
 - (id)initWithAccessToken:(NSString *)accessToken;
-- (NSSet *)fields:(Organization *)org;
-- (NSArray *)organizations;
-- (NSArray *)searchOrganizations:(OrganizationSearch *)search;
-- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org error:(NSError **)error;
-- (VerificationResponse *)verify:(Person *)p organization:(Organization *)org affiliationTypes:(NSSet *)affTypes error:(NSError **)error;
+- (id)initWithAccessToken:(NSString *)accessToken hostname:(NSString *)hostname;
+- (void)listFields:(Organization *)org;
+- (void)organizations;
+- (void)searchOrganizations:(OrganizationSearch *)search;
+- (void)verify:(Person *)p organization:(Organization *)org;
+- (void)verify:(Person *)p organization:(Organization *)org affiliationTypes:(NSSet *)affTypes;
 
 @end

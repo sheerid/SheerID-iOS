@@ -7,14 +7,7 @@
 //
 
 #import "SheerIDMobile.h"
-
-@interface Organization ()
-{
-@private
-    NSString *ID;
-    NSString *name;
-}
-@end
+#import "SheerIDMobile+Private.h"
 
 @implementation Organization
 

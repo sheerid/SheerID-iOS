@@ -7,7 +7,12 @@
 //
 
 #import "SheerIDMobile.h"
+#import "SheerIDMobile+Private.h"
 
 @implementation AffiliationType
+
++ (AffiliationType *)affiliationTypeWithCode:(NSString *)code {
+    return [[[AffiliationType alloc] initWithCode:code] autorelease];
+}
 
 @end

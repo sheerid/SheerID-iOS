@@ -7,6 +7,7 @@
 //
 
 #import "SheerIDMobile.h"
+#import "SheerIDMobile+Private.h"
 #import "SheerIDMobileTests.h"
 
 @implementation SheerIDMobileTests

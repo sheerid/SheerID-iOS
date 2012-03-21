@@ -7,16 +7,7 @@
 //
 
 #import "SheerIDMobile.h"
-
-@interface ServiceConstant ()
-{
-@private
-    NSString *code;
-    NSString *displayName;
-}
-
-@end
-
+#import "SheerIDMobile+Private.h"
 
 @implementation ServiceConstant
 
