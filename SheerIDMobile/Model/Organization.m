@@ -11,6 +11,10 @@
 
 @implementation Organization
 
++ (Organization *)organizationWithID:(NSString *)ID {
+    return [[[Organization alloc] initWithID:ID] autorelease];
+}
+
 - (id)initWithID:(NSString *)myID {
     self = [self initWithID:myID name:nil];
     return self;

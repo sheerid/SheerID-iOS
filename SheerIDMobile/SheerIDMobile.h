@@ -44,6 +44,8 @@
 - (NSString *)ID;
 - (NSString *)name;
 
++ (Organization *)organizationWithID:(NSString *)ID;
+
 @end
 
 
